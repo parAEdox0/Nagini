@@ -1,2 +1,2 @@
 # Python
- Codes in Pythong
+ Codes in Python
