@@ -5,6 +5,6 @@ def isprime(num):
             return
     else:
         print("The Number is Prime")
-
+print("Hello")
 num = int(input("Enter a Number : "))
 isprime(num)
