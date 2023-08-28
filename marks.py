@@ -3,10 +3,15 @@ present = []
 absent = []
 num = int(input("ENTER NUMBER OF STUDENTS : "))
 print()
+print("(ENTER MARKS OBTAINED OUT OF 20 OR 'ab' IF ABSENT)")
 
 for i in range(1, num+1):
     val = input(f"ENTER MARKS OBTAINED BY ROLL NUMBER {i} : ")
-    marks.append(val)
+    if val == "ab" or 0 <= int(val) <= 20:
+        marks.append(val)
+    else:
+        print("YOU'VE ENTERED WRONG INPUT PLEASE ENTER MARKS OUT OF 20 OR 'ab' IF ABSENT")
+        exit(1)
 k = 1
 for j in marks:
     if j == "ab":       
